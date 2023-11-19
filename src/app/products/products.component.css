@@ -1,0 +1,125 @@
+*,
+*::after *::before {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.productsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px !important;
+}
+
+
+.card {
+    position: sticky;
+    z-index: 999;
+    top: 285px;
+    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2013/03/21/56229/1ada68a42cc61a789632ce404a38f1e9-1000.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: right 0px bottom -30px;
+    border-radius: 35px;
+}
+.card:hover{
+    position: sticky;
+    z-index: 999;
+    top: 285px;
+    background-color: rgba(255, 255, 255, 0.24);
+    background-image: url(https://i.pinimg.com/originals/98/84/f2/9884f2022737f150b99d8ee693609c1c.gif);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: right -10px bottom 0px;
+    border-radius: 35px;
+}
+
+.card-sl {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-image img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 8px 8px 0px 0;
+    background-color: rgba(0, 4, 255, 0.467);
+}
+
+.card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    background: #ffffff;
+    padding: 10px 15px;
+}
+
+.card-text {
+    padding: 10px 15px;
+    background: #ffffffa4;
+    font-size: 14px;
+    color: #000000;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #1F487E;
+    color: #ffffff;
+    border-radius: 0 0 8px 8px;
+}
+
+.card-button:hover {
+    text-decoration: none;
+    background-color: #00d9ff;
+    color: #fff;
+}
+
+#myTab {
+    position: absolute;
+    padding: 30px;
+    position: sticky;
+    z-index: 999;
+    top: 167px;
+    background-image: url(https://s1.1zoom.me/b5355/718/Knife_Vegetables_Cutting_board_527517_2560x1440.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: right -2px bottom -230px;
+}
+
+
+#myTab button {
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 40px;
+    background-color: #6362629f;
+    color: white;
+}
+
+#myTab button:hover {
+    background-color: #ff0000;
+}
+
+.card {
+    background-color: #ff0000ec;
+}
+
+.card .blue {
+    margin-left: 28%;
+    padding: 5px 31px;
+
+}
+
+.card .red {
+    align-items: center;
+    margin-left: 28%;
+}

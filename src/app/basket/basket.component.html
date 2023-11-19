@@ -1,0 +1,75 @@
+<div class="container" *ngIf="basket.length != 0">
+  <div class="row cartdivrow">
+    <div class="col-1"></div>
+    <div class="col-3">Product Name</div>
+    <div class="col-2 text-center">Quantity</div>
+    <div class="col-2 text-center">Price</div>
+    <div class="col-2 text-center">Total</div>
+    <div class="row productrowdiv" *ngFor="let item of basket; let i = index">
+      <div class="col-1 d-flex flex-column">
+        <div>
+          <button
+            (click)="deleteItem(item.product.id, i)"
+            class="btn btn-sm btn-danger delete"
+          >
+            X
+          </button>
+          <img class="card-img-top cartimage" src="{{item.product.image}}">
+        </div>
+      </div>
+      <div class="col-3">{{ item.product.name }}</div>
+      <div class="col-2 text-center">
+        
+        <input
+          type="button"
+          (click)="changeQuantity(-1, i)"
+          value="-"
+          class="button-minus border rounded-circle icon-shape icon-sm mx-1"
+        />
+        <input
+          type=""
+          step="1"
+          max="100"
+          value="{{ item.quantity }}"
+          name="quantity"
+          class="quantity-field border-0 text-center w-25"
+        />
+        <input
+          type="button"
+          (click)="changeQuantity(1, i)"
+          value="+"
+          class="button-plus border rounded-circle icon-shape icon-sm"
+        />
+      </div>
+      <div class="col-2 text-center">{{ item.product.price }}</div>
+      <div class="col-2 text-center">
+        {{ item.quantity * item.product.price }}
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-end mt-4">
+    <div class="col-2"><b>Total Price:</b> {{ totalPrice() }}</div>
+  </div>
+  <button type="button" class="btn btn-info shopbtn">PROCEED TO CHECKOUT</button>
+</div>
+<ng-container *ngIf="basket.length == 0">
+  <div class="container">
+    <div class="card">
+      <h5 class="card-title">my cart</h5>
+    </div>
+
+    <div class="center">
+      <img 
+        src="https://usagif.com/wp-content/uploads/gifs/hungry-4.gif"
+        alt=""
+      />
+      <h4>Your cart is empty!</h4>
+      <h6>Add product to it now</h6>
+      
+      <button routerLink="/products" class="btn btn-danger">Shop Now</button>
+    </div>
+  </div>
+</ng-container>
+
+
+

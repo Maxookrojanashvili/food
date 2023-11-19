@@ -1,0 +1,68 @@
+*,
+*::after *::before {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+
+/*Navbar And Header*/
+.container {
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 18vh;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-image: url(https://s1.1zoom.me/b5355/718/Knife_Vegetables_Cutting_board_527517_2560x1440.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: right -5px bottom -340px;
+}
+
+
+.navbar {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.nav-item a {
+    color: rgb(90, 90, 90);
+    margin-right: 30px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.cart img{
+    width: 150px;
+    height: 150px;
+}
+
+.cart img:hover{
+    width: 180px;
+    height: 180px;
+}
+
+#home{
+    margin-right: 120px;
+    margin-top: 25px;
+}
+#home img:hover{
+    width: 110px;
+    height: 110px;
+}
+.navbar li {
+    width: fit-content;
+    color: white;
+}
+

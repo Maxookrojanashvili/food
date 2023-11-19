@@ -1,0 +1,96 @@
+.body {
+    min-height: 100vh;
+    background: #212534;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.card {
+    height: 60vh;
+    margin: 25px;
+    padding: 25px;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
+    border-radius: 25px;
+}
+
+.center img {
+    height: 180px;
+    width: 250px;
+    margin: 20px 0px;
+}
+
+.card-title {
+    color: rgb(255, 255, 255);
+}
+
+h4,
+h6 {
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    border-radius: 35px;
+    padding: 30px;
+}
+
+.card-table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+
+.center .btn {
+    font-size: 14px !important;
+    margin-top: 20px !important;
+    font-weight: 400;
+    padding: 12px 72px;
+    border-radius: 35px !important;
+}
+
+.cartimage {
+    width: 60px;
+    margin-left: 35px;
+    margin-top: -50px;
+}
+
+.cartdivrow {
+    margin-top: 50px;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
+    color: white;
+    border-radius: 35px;
+    row-gap: 10px;
+}
+
+.shopbtn {
+    margin-top: 20px;
+    margin-left: 80%;
+}
+
+.productrowdiv {
+    border-radius: 25px !important;
+    
+    align-items: center;
+    margin-left: 3px;
+    margin-bottom: 20px !important;
+}
+
+.delete{
+    margin-top: 15px;
+}
